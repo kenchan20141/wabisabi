@@ -269,39 +269,7 @@
             }
         }
 
-		/* ========================================= */
-/* === [手機版修復] 學年管理列表顯示修正 === */
-/* ========================================= */
-@media (max-width: 768px) {
-    
-    /* 1. 修正圓點按鈕 (Radio Button) 被拉伸的問題 */
-    /* 針對 .transfer-column 裡面的 radio 類型 input 進行特例處理 */
-    .transfer-column input[type="radio"] {
-        width: 24px !important;        /* 強制恢復為固定小尺寸 */
-        height: 24px !important;       /* 設定高度 */
-        flex: 0 0 24px !important;     /* 禁止 Flex 自動拉伸或壓縮 */
-        margin: 0 15px 0 0 !important; /* 右邊留白，底部不留白 */
-        box-shadow: none !important;   /* 移除可能的陰影 */
-    }
 
-    /* 2. 修正列表項目的排版 */
-    .student-select-item {
-        display: flex !important;       /* 確保是橫向排列 */
-        flex-direction: row !important; /* 強制水平方向 (左圖右文) */
-        align-items: center !important; /* 垂直置中 */
-        justify-content: flex-start !important; /* 內容靠左 */
-        text-align: left !important;    /* 文字靠左 */
-        
-        width: 100% !important;
-        padding: 12px 10px !important;  /* 增加點擊範圍 */
-        box-sizing: border-box;
-    }
-    
-    /* 3. 優化列表容器的高度，避免手機上太短難滑 */
-    .transfer-list-box {
-        height: 300px !important; /* 稍微加高 */
-    }
-}
 
     </style>
 </head>
